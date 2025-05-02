@@ -1,21 +1,14 @@
-import HeaderBanner from "./components/HeaderBanner";
-import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import BestSeller from "./components/BestSeller";
-import Footer from "./components/Footer";
-import JustIn from "./components/JustIn";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import OrderPage from "./pages/OrderPage";
 
 export default function App() {
   return (
-    <>
-      <div className="lg:m-3 rounded-xl md:shadow-xl overflow-hidden">
-        <HeaderBanner />
-        <Navigation />
-        <HeroSection />
-        <JustIn />
-        <BestSeller />
-        <Footer />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/order" element={<OrderPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
