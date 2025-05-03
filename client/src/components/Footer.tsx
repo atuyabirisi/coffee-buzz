@@ -11,7 +11,7 @@ export default function Footer() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4 text-center">
+            <h2 className="text-2xl font-bold mb-4 text-center italic">
               Coffee Place
             </h2>
             <p className="text-sm text-center">
